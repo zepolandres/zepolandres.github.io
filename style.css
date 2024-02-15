@@ -1,89 +1,78 @@
-html {
-  height: 100%;
-  width: 100%;
-}
-
-img {
- border-radius:50px ;
- width:100px;
- }
-h1{
-  text-align: center;
-}
-h2 {
- font-size: 18px;
-  text-align:center;
-}
+/* Estilos para el cuerpo de la página */
 body {
- text-align: center;
- background-color: #000d2d;
- font-family:Trebuchet MS;
- line-height: 1.6;
- color:white;
- margin: 0;
- padding: 0;
-}
-a {
- background-color: white;
- font-size: 20px;
-border-radius:10px;
-padding-top:10px;
-display: block;
-text-align:center;
-margin:0 auto;
-max-width: 400px;
-color:slateblue;
-margin-bottom: 6px;
-
-}
-a:hover{
-  background-color: rgb(4, 218, 164);
-}
-
-button:hover{
-  background-color: rgb(4, 218, 164);
-}
-
-main section {
-  display: none;
-}
-
-main section.show{
-  display: block;
-}
-
-*{
-
+  background-color: #000d2d;
+  font-family: Trebuchet MS;
+  color: white;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  text-align: center; /* Centra el texto del cuerpo */
 }
 
-main{
+/* Estilos para la imagen */
+img {
+  border-radius: 50px;
+  width: 100px;
+  margin: 20px auto; /* Centra la imagen horizontalmente */
+  display: block; /* Asegura que la imagen se comporte como un bloque */
+}
+
+/* Estilos para los párrafos */
+p {
+  text-align: center; /* Centra los párrafos */
+  margin-bottom: 20px; /* Espaciado inferior entre párrafos */
+}
+
+/* Estilos para los enlaces */
+a {
+  background-color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 20px; /* Ajusta el relleno de los enlaces */
+  display: inline-block; /* Asegura que los enlaces no ocupen todo el ancho */
+  margin-bottom: 10px; /* Espaciado inferior entre enlaces */
+  color: slateblue;
+  text-decoration: none; /* Quita el subrayado predeterminado */
+}
+
+a:hover {
+  background-color: rgb(4, 218, 164);
+}
+
+/* Estilos para el botón */
+button {
+  background-color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 20px; /* Ajusta el relleno del botón */
+  margin: 10px; /* Espaciado alrededor del botón */
+  color: slateblue;
+  border: none; /* Quita el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+  background-color: rgb(4, 218, 164);
+}
+
+/* Estilos para el contenido principal */
+main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  min-height: 30vh;
-  max-width: 800px;
-  margin: 0;
   padding: 20px;
-  
+  max-width: 800px;
+  margin: 0 auto; /* Centra el contenido principal horizontalmente */
 }
 
+/* Estilos para las secciones */
 section {
-  display: none;
+  display: none; /* Oculta todas las secciones por defecto */
   max-width: 800px;
   margin-bottom: 20px;
+  text-align: center; /* Centra el texto dentro de las secciones */
 }
 
-/*
-main{
-
-  width: 100%;
-  max-width: 1200px;
-  margin: 0;
-  padding: 20px;
-  
+/* Estilo para la sección visible */
+section.show {
+  display: block; /* Muestra la sección cuando tiene la clase 'show' */
 }
-*/
