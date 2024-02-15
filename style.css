@@ -18,7 +18,10 @@ body {
  text-align: center;
  background-color: #000d2d;
  font-family:Trebuchet MS;
+ line-height: 1.6;
  color:white;
+ margin: 0;
+ padding: 0;
 }
 a {
  background-color: white;
@@ -27,7 +30,60 @@ border-radius:10px;
 padding-top:10px;
 display: block;
 text-align:center;
-margin:10px;
+margin:0 auto;
+max-width: 400px;
 color:slateblue;
+margin-bottom: 6px;
+
+}
+a:hover{
+  background-color: rgb(4, 218, 164);
 }
 
+button:hover{
+  background-color: rgb(4, 218, 164);
+}
+
+main section {
+  display: none;
+}
+
+main section.show{
+  display: block;
+}
+
+*{
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30vh;
+  max-width: 800px;
+  margin: 0;
+  padding: 20px;
+  
+}
+
+section {
+  display: none;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+/*
+main{
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 20px;
+  
+}
+*/
