@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+ border-radius:50px ;
+ width:100px;
+ }
+h1{
+  text-align: center;
+}
+h2 {
+ font-size: 18px;
+  text-align:center;
+}
+body {
+ text-align: center;
+ background-color: #322b6b;
+ font-family:Trebuchet MS;
+ color:white;
+}
+a {
+ background-color: white;
+ font-size: 20px;
+border-radius:10px;
+padding-top:10px;
+display: block;
+text-align:center;
+margin:10px;
+color:slateblue;
+}
+
