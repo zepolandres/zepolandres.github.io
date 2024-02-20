@@ -1,7 +1,8 @@
 /* Estilos para el cuerpo de la página */
 body {
   background-color: #000d2d;
-  font-family: Trebuchet MS;
+  background-image: radial-gradient(circle at center, #000d2d 0%, #252233 87%);
+  font-family: "Raleway", sans-serif;
   color: white;
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@ img {
 
 /* Estilos para los párrafos */
 p {
+  
   text-align: center; /* Centra los párrafos */
   margin-bottom: 20px; /* Espaciado inferior entre párrafos */
 }
@@ -70,9 +72,40 @@ section {
   max-width: 800px;
   margin-bottom: 20px;
   text-align: center; /* Centra el texto dentro de las secciones */
+  animation: glitch-fade-in 0.4s ease-in-out forwards; /* Aplica la animación de glitch-fade-in */
 }
 
 /* Estilo para la sección visible */
 section.show {
   display: block; /* Muestra la sección cuando tiene la clase 'show' */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+@keyframes glitch-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
